@@ -1,0 +1,38 @@
+<div id="maindiv">
+<form class="w-full max-w-sm" id="simulate_process" method="post" action="/users">
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+        Enter the number of Users
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="totalusers" type="text">
+    </div>
+  </div>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-username">
+        Enter the number of Requests
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="totalrequests" type="text">
+    </div>
+  </div>
+  <div class="md:flex md:items-center">
+    <div class="md:w-1/3"></div>
+    <div class="md:w-2/3">
+      <button class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+        SIMULATE
+      </button>
+    </div>
+  </div>
+</form>
+
+<div id="simulation_response" style="height:500px;width:500px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+</div>
+</div>
+
+

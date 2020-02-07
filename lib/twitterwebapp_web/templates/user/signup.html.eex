@@ -1,0 +1,6 @@
+<%= form_for @conn, Routes.user_path(@conn, :signup), [as: :user], fn f -> %>
+  <%= text_input f, :username %>
+  <%= text_input f, :password %>
+  <%= submit "Sign Up" %>
+<% end %>
+<ul class="list-group mt-5" id="messageslist"></ul>

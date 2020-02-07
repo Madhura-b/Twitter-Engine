@@ -1,0 +1,89 @@
+<div id="maindiv">
+  <%= gettext "Welcome to Twitter, User %{name} !", name: @userid %>
+  <script>window.channelRoomId = "<%= @userid %>"</script>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+        Enter Tweet
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="tweet_msg" type="text" >
+      <button class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" id="post_tweet" type="button">
+        Post Tweet
+      </button>
+      <button class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" id="get_tweets" type="button">
+        Get All Tweets
+      </button>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+        Enter user to follow
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="follow" type="text" >
+      <button id="add_follower" class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Follow
+      </button>
+    </div>
+  </div>
+
+
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+        Enter msg to search
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="search_msg" type="text" >
+      <button id="search_tweets" class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Search all Tweets
+      </button>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-1/3">
+      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+        Enter hashtag
+      </label>
+    </div>
+    <div class="md:w-2/3">
+      <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="search_hashtag" type="text" value="Jane Doe">
+      <button id="search_hashtags" class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Search Hashtag
+      </button>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-2/3">
+      <button id="search_mentions" class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Get My Mentions
+      </button>
+    </div>
+  </div>
+  <div class="md:flex md:items-center mb-6">
+    <div class="md:w-2/3">
+      <button id="retweets" class="shadow bg-blue-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        Retweets
+      </button>
+    </div>
+  </div>
+
+
+<h3>Tweet Feed</h3>
+<ul class="list-group mt-5 " id="tweetslist">
+</ul>
+<h3>Tweets containing this hashtag</h3>
+<ul class="list-group mt-5" id="mentionslist">
+</ul>
+<h3>List of my mentions</h3>
+<ul class="list-group mt-5" id="hashtaglist">
+<h3>Search Response</h3>
+<ul class="list-group mt-5" id="lists_response"></ul>
+
+
+</div>
