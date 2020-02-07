@@ -2,9 +2,8 @@ DOS Project - 4.2
 Twitter Simulator with WebUI
 
 Team Members : 
-
-Desikan Sundararajan - 5615-9991
-Madhura Basavaraju - 6794-1287
+Madhura Basavaraju
+Desikan Sundararajan 
 
 How to Run
 
